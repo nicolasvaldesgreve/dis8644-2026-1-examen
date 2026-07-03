@@ -24,13 +24,20 @@ principio de funcionamiento de cada una, qué tipo de señal entrega a la salida
 lista de materiales con costos. Incluir tiempo de soldadura
 
 
-### Placas armadas
+### placas armadas
 
 
 - Maincra
 - Registro de desplazamiento estático (Nyan cat)
 - Comando estelar
   
+----------------
+
+### procesos
+
+![test](./imagenes/test-render-1.png)
+
+----------------
 
   ### BOM PCB MAINCRA
 
