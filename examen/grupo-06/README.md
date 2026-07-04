@@ -8,9 +8,31 @@
 - Vania paredes / [24-paredesvania](https://github.com/terroiblea/dis8644-2026-1-procesos-2/tree/main/24-paredesvania)
 - Carla Pino / [25-coff4](https://github.com/terroiblea/dis8644-2026-1-procesos-2/tree/main/25-Coff4)
 
-## Problemas 04.07
+# Reporte de estado — PCBs
 
-Nosotros hemos tenido varios problemas con las pcb, de los cuales ya logramos resolver muchos coon ayuda de nuestros compañeres (sobre todo Cami Ramirez) y mucha prueba y error, ahora mismo ya nos funciona Barry Benson, ludup nos funciona a medias, funciona pero en una cierta posición, creímos que era la soldadura pero se reforzó y seguía igual o peor, creemos ahora que pueden ser unos cables, por lo que mañana los cambiaremos y veremos si se soluciona. Respecto a la tercera placa que queríamos utilizar, la del Chirihue, no  os funciona, prendía la luz pero no oscilaba ni sonaba, mucho estrés, no logramos hacerla funcionar y nos rendimos, por lo que tenemos pensado en armar el circuito en protoboard para ver si nos funciona, si es así, luego soldarlo en una placa verde para soldar y presentarlo de esa manera. Estos problemas han hecho que no podamos avanzar con nuestra carcasa ya que esta depende de cuantas placas y potenciometros usaremos, por lo que nos ha atrasado ;(
+## Placas usadas
+- **Placa 01 (percusor "Barry Benson")**: diseñada por grupo 06
+- **Placa 02 (percusor "Ludub/Lubdub")**: diseñada por grupo 06
+- **Placa 03 (oscilador "Chirihue")**: diseñada por grupo 04
+
+## Estado de construcción
+- **Placa 01 (Barry Benson)**: funciona perfecto.
+- **Placa 02 (Ludub)**: funciona a medias, solo en cierta posición. Se sospechó de la soldadura, se reforzó y siguió igual o peor. Ahora se sospecha de los cables; se cambiarán mañana para ver si se soluciona.
+- **Placa 03 (Chirihue)**: no funciona. Prende la luz pero no oscila ni suena. Se intentó resolver sin éxito y se decidió no seguir insistiendo con esta placa en su formato actual. Plan: armar el circuito en protoboard para probar que funcione, y si es así, soldarlo en una placa verde para presentar.
+
+## Ayudas eléctricas que necesitamos domingo
+- Ayuda para confirmar si el problema de la placa 02 (Ludub) son efectivamente los cables (dado que ya se descartó la soldadura), y cómo solucionarlo si es otra causa.
+- Ayuda para armar y probar el oscilador (Chirihue) en protoboard, ya que en placa nunca logró funcionar y no tenemos referencia de otro grupo que la haya hecho andar, o ver si se puede solucionar lo de la pcb.
+
+## Ayuda audio que necesitamos domingo
+- Estamos usando el parlante/amplificador del LID para la salida de audio; no hay problemas reportados en esta parte por ahora.
+
+## Materiales faltantes
+- No nos faltan materiales.
+- No estamos usando placa de piezo.
+
+## Nota adicional
+Estos problemas (especialmente el oscilador sin resolver) nos han atrasado con la carcasa, ya que su diseño depende de cuántas placas y potenciómetros usaremos finalmente :(
 
 ## Biofonía
 
