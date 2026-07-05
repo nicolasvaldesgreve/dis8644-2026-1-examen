@@ -22,11 +22,11 @@ Todo este proceso ha sido prueba y error, si no funciona, se cambia y se vuelve 
 
 ### WhiteSample
 
-Artista chileno que usa sintetizadores analógicos 
+- Artista chileno que usa sintetizadores analógicos
 
-Ha trabajado con Lollapalooza con estructuras interactivas (WhiteSample, 2014) 
+- Ha trabajado con Lollapalooza con estructuras interactivas (WhiteSample, 2014) 
 
-Su música es experimental/electrónica 
+- Su música es experimental/electrónica 
 
 ![whitesample](./imagenes/whitesample-2.jpg) (WhiteSample & Cargo Collective, 2012)
 
@@ -34,11 +34,11 @@ Su música es experimental/electrónica
 
 ### anthony1
 
-DJ/productor chileno 
+- DJ/Productor chileno 
 
-Ha hecho tocatas ambientales donde utiliza sintetizadores analógicos y efectos digitales 
+- Ha hecho tocatas ambientales donde utiliza sintetizadores analógicos y efectos digitales 
 
-Forma parte de un colectivo de varios artistas electrónicos chilenos (Team Mekano) 
+- Forma parte de un colectivo de varios artistas electrónicos chilenos (Team Mekano) 
 
 ![anthony1](./imagenes/anthony1.png) (Anthony1, 2022)
 
@@ -46,7 +46,7 @@ Forma parte de un colectivo de varios artistas electrónicos chilenos (Team Meka
 
 ## Disponibilidad material 
 
-En cuanto a la disponibilidad material en chile nos ubicamos principalmente en 2 lugares/tienda; San Diego y Victronics. en San Diego se encuentran varias tiendas de electrónicas que ofrecen distintos componentes, la gracia es los distintos lugares y sus especialidades. 
+En cuanto a la disponibilidad material en chile nos ubicamos principalmente en 2 lugares/tienda; San Diego y Victronics. En San Diego se encuentran varias tiendas de electrónicas que ofrecen distintos componentes, la gracia es los distintos lugares y sus especialidades. 
 
 Victronics es una tienda online, por eso pueden ofrecer precios más bajos, además tienen accesorios como espaciadores y pernos para armar las carcasas. 
 
@@ -156,13 +156,11 @@ Este módulo recibe dos inputs, energía eléctrica a través de los conectores 
 
 # **?????????** *(Placas soldadas)*
 
-Principio de funcionamiento de cada una, qué tipo de señal entrega a la salida, qué recibe lista de materiales con costos. Incluir tiempo de soldadura. 
-
 Nuestro sintetizador está formado de 4 módulos: 
 
 ## Maincra (Piezo/Entrada) 
 
-*Un micrófono de contacto que detecta vibraciones, manda señales a un amplificador e inversor de señales. estos convierten la corriente la cual entra a un reloj interno que lo camba a pasos para que un secuenciador pueda funcionar.*
+*Un micrófono de contacto que detecta vibraciones, manda señales a un amplificador e inversor de señales. Estos convierten la corriente la cual entra a un reloj interno que lo camba a pasos para que un secuenciador pueda funcionar.*
 
 ## Nyan cat (Secuenciador) 
 
@@ -187,36 +185,36 @@ Nuestro sintetizador está formado de 4 módulos:
 
 ### Para tener un flujo de trabajo más ordenado pusimos todos los componentes necesarios para armar una placa de lado. 
 
-> 1era dificultad
+> 1era dificultad:
 >
-> Tuvimos problemas con la organización en la compra de componentes, listas incompletas 
+> Tuvimos problemas con la organización en la compra de componentes, listas incompletas.
 >
 
 ### Soldamos los componentes por tamaño (de más pequeño a más grande) y cables para los que van montados en la carcasa. 
 
-> 2da dificultad
+> 2da dificultad:
 >
-> También tuvimos problemas con el corte del acrílico para la carcasa 
+> También tuvimos problemas con el corte del acrílico para la carcasa.
 >
-> 1er corte: Falta de agujeros para componentes y tamaño equivocado
+> 1er corte: Falta de agujeros para componentes y tamaño equivocado.
 >
-> 2do corte: Formato no compatible de archivo 
+> 2do corte: Formato no compatible de archivo.
 >
-> 3er/4to/5to corte: Parámetros erróneos y líneas de corte extra 
+> 3er/4to/5to corte: Parámetros erróneos y líneas de corte extra.
 >
-> 6to corte: Por falta de material usamos los restantes de cortes anteriores
+> 6to corte: Por falta de material usamos los restantes de cortes anteriores.
 > 
 
-### Armamos las carcasas con los separadores 
+### Armamos las carcasas con los separadores.
 
-> 3era dificultad
+> 3era dificultad:
 >
-> Falta de separadores para las carcasas por modificaciones en tamaño
+> Falta de separadores para las carcasas por modificaciones en tamaño.
 >
 
-### Al tener todo soldado en la placa se empezó a armar la cubierta de acrílico con los separadores *(gracias al grupo 04 por darnos sus separadores restantes)*, pusimos los potenciómetros, entradas/salidas de audio y switch conectados con los cables 
+### Al tener todo soldado en la placa se empezó a armar la cubierta de acrílico con los separadores *(gracias al grupo 04 por darnos sus separadores restantes)*, pusimos los potenciómetros, entradas/salidas de audio y switch conectados con los cables.
 
-> 4ta dificultad
+> 4ta dificultad:
 >
 > Funcionamiento correcto de las PCB, soldamos varias veces las placas, cambiamos los componentes y remplazamos los cables, pero no funcionaban. 
 >
@@ -227,7 +225,7 @@ Nuestro sintetizador está formado de 4 módulos:
 
 > *Escogimos trabajar con acrílico ya que éramos familiares con el material. es fácil de trabajar por su compatibilidad con el corte laser que nos permitía cortar varias carcasas, grabar y lograr un buen oficio. el material es firme, perfecto para lo que teníamos en mente, además es económico.*
 >
-> *Una cualidad del acrílico que utilizamos es la transparencia. buscamos celebrar el diseño de las PCB a través de la transparencia de este, rompiendo la caja negra e invitando a la apreciación integral de cada placa y sus distintos componentes.*
+> *Una cualidad del acrílico que utilizamos es la transparencia. Buscamos celebrar el diseño de las PCB a través de la transparencia de este, rompiendo la caja negra e invitando a la apreciación integral de cada placa y sus distintos componentes.*
 
 ### Referentes carcasa 
 
@@ -260,7 +258,7 @@ Nuestro sintetizador está formado de 4 módulos:
 >
 > *"Esconderse hasta que todos se olviden de uno."*
 >
-> *"Esconderse hasta que todos se mueran"*
+> *"Esconderse hasta que todos se mueran."*
 > *(Ono, 1964, 25)*
 
 ---
@@ -273,7 +271,7 @@ Descubrimos que nuestra partitura calzaba con el principio del Sitio especifico,
 
 ---
 
-#### Ping Pong
+### Ping Pong
 
 *(ver. literal 2)* **Como grupo-01 vamos a ir a República 180, Santiago de Chile con “Maincra” (piezo-01), el parlante, “Nyan cat” (secuenciador-2) y "comando estelar" (oscilador-1). Pedir las paletas y pelotas donde los guardias. Pondremos un piezo en cada paleta de Ping Pong con masking tape. Situar el sintetizador bajo la mesa, asegurar que los cables no se enreden entre sí. Jugar una partida completa de Ping Pong de 21 puntos, con el impacto de la pelota en las paletas el secuenciador avanza, haciendo que el oscilador pueda funcionar. Al terminar la partida devolver las paletas y pelota a los guardias.**
 
