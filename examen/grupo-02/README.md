@@ -8,6 +8,171 @@
 - Angel Sabogal / [angel-udp](https://github.com/angel-udp/dis8644-2026-1)
 - Tomas Catrileo / [tomascatri](https://github.com/tomascatri/dis8644-2026-1)
 
+# Avance Sabado Sabado 04 de Julio 
+
+## Placas usadas
+
+| Placas    | Categoría       | Diseñada por | Imagen                           |
+| :-------- | :---------------| :----------- | :------------------------------- |
+| 01        | Reloj           | Docentes     | ![Placas](./imagenes/pcb01.jpeg) |
+| 02        | Secuenciador 02 | Grupo 02     | ![Placas](./imagenes/pcb02.jpeg) |
+| 03        | Percusión 02    | Grupo 06     | ![Placas](./imagenes/pcb03.jpeg) |
+| 04        | Oscilador 01    | Grupo 04     | ![Placas](./imagenes/pcb04.jpeg) |
+| 05        | Oscilador 02    | Grupo 04     | ![Placas](./imagenes/pcb05.jpeg) |
+| 06        | Oscilador 01    | Grupo 03     | ![Placas](./imagenes/pcb06.jpeg) |
+| 07        | Oscilador 02    | Grupo 03     | ![Placas](./imagenes/pcb07.jpeg) |
+
+<br>
+
+## Explicación de flujo de señal de audio:
+
+ordenado a grandes rasgos gesto humano a fuentes de tiempo, a secuenciador, a osciladores, a filtros, a mezcladores, a parlante
+
+- la placa 01 corresponde al reloj y la salida envía una señal hacia la placa 02 secuenciador.
+
+- la placa 02 corresponde al secuenciador, esta tiene como entrada la señal del reloj, cuenta con 6 salidas, las cuales van a la entrada de voltaje de cada una de las 5 placas, las cuales corresponden a 4 osciladores y 1 percutor. Una de estas salidas quedará sin conectarse a nada, es decir, habrá silencio en una salida.
+
+- las placas: 03, 04, 05, 06 y 07 corresponden a fuentes sonoras, reemplazamos todas las conexiones que correspondían a potenciómetros por LDR para regular de forma gestual con luz los parámetros del sonido de cada una de las placas.
+
+- la salida tanto de los cuatro osciladores como del percutor es audio que va a la siguiente placa de amplificador o amplificador comercial, lo cuál está aún en veremos debido a dudas sobre el funcionamiento de parla (placa docentes).
+
+<br>
+
+## Estado de construcción
+
+| Placas    | Categoría       | Diseñada por | Estado de construcción          |
+| :-------- | :-------------- | :----------- | :------------------------------ |
+| 01        | Reloj           | Docentes     | Funcional                       |
+| 02        | Secuenciador 02 | Grupo 02     | Funciona, pero estamos revisando la interconexión con otras PCB mediante el uso de relés |
+| 03        | Percusión 02    | Grupo 06     | Funciona individualmente / Se deben cambiar conectores adaptados para la carcasa |
+| 04        | Oscilador 01    | Grupo 04     | Funciona individualmente / Se deben cambiar conectores adaptados para la carcasa |
+| 05        | Oscilador 02    | Grupo 04     | Funciona individualmente / Se deben cambiar conectores adaptados para la carcasa |
+| 06        | Oscilador 01    | Grupo 03     | Funciona individualmente / Se deben cambiar conectores adaptados para la carcasa |
+| 07        | Oscilador 02    | Grupo 03     | Funciona individualmente / Se deben cambiar conectores adaptados para la carcasa |
+
+<br>
+
+## Ayudas eléctricas que necesitamos domingo:
+
+- Queremos utilizar relés para conectar el secuenciador a los osciladores y percusión.
+  
+	Por lo hablado con Misaaaa y lo estudiado, entendemos que para unir los osciladores al secuenciador debemos hacerlo mediante el uso de un relé que sirva de switch para prender y apagar cada placa al momento que el secuenciador lo indique. Por lo mismo luego de varios intentos logramos hacer funcionar el sistema de encendido por relé agregando un transistor 2222A que aumenta el voltaje de salida de 4V a 9V en cada _step_
+
+Dicho todo esto, queremos saber si estas conexiones están bien realizadas y si es posible optimizar el cómo se encuentra todo conectado.
+
+<br>
+
+## Ayuda audio que necesitamos domingo:
+
+- Necesitamos ayuda con la estática que produce el parlante.
+
+- El chirihue bajo el volumen, no se está escuchando como debería.
+
+- Necesitamos conectar la salida de audio de todos los osciladores (y percusión) a un mixer, ya sea en una protoboard con un LM386 o en un fabricado comercialmente 
+
+-  Saber si Parla funciona o si debemos utilizar otro amplificador
+
+<br>
+
+## Aateriales faltantes:
+
+- Ldr, tenemos todos conectados a las placas, pero en caso de que fallen, mejor que sobre a que falte.
+
+- Es probable que necesitemos cable para conectar los LDR (Van a salir de la carcasa casi 60cm y disponemos de casi 20 de estos)
+
+<br>
+
+## Dudas Github
+
+ - No tenemos claridad como incluir este apartado (solicitud de avances por ayudas dia domingo) dentro del repo de examen. Además de saber si la estructura actual es correcta
+
+---
+
+<br>
+
+# Avance Sabado Sabado 04 de Julio 
+
+
+## Placas usadas
+
+| Placas    | Categoría       | Diseñada por | Imagen                           |
+| :-------- | :---------------| :----------- | :------------------------------- |
+| 01        | Reloj           | Docentes     | ![Placas](./imagenes/pcb01.jpeg) |
+| 02        | Secuenciador 02 | Grupo 02     | ![Placas](./imagenes/pcb02.jpeg) |
+| 03        | Percusión 02    | Grupo 06     | ![Placas](./imagenes/pcb03.jpeg) |
+| 04        | Oscilador 01    | Grupo 04     | ![Placas](./imagenes/pcb04.jpeg) |
+| 05        | Oscilador 02    | Grupo 04     | ![Placas](./imagenes/pcb05.jpeg) |
+| 06        | Oscilador 01    | Grupo 03     | ![Placas](./imagenes/pcb06.jpeg) |
+| 07        | Oscilador 02    | Grupo 03     | ![Placas](./imagenes/pcb07.jpeg) |
+
+<br>
+
+## Explicación de flujo de señal de audio:
+
+ordenado a grandes rasgos gesto humano a fuentes de tiempo, a secuenciador, a osciladores, a filtros, a mezcladores, a parlante
+
+- la placa 01 corresponde al reloj y la salida envía una señal hacia la placa 02 secuenciador.
+
+- la placa 02 corresponde al secuenciador, esta tiene como entrada la señal del reloj, cuenta con 6 salidas, las cuales van a la entrada de voltaje de cada una de las 5 placas, las cuales corresponden a 4 osciladores y 1 percutor. Una de estas salidas quedará sin conectarse a nada, es decir, habrá silencio en una salida.
+
+- las placas: 03, 04, 05, 06 y 07 corresponden a fuentes sonoras, reemplazamos todas las conexiones que correspondían a potenciómetros por LDR para regular de forma gestual con luz los parámetros del sonido de cada una de las placas.
+
+- la salida tanto de los cuatro osciladores como del percutor es audio que va a la siguiente placa de amplificador o amplificador comercial, lo cuál está aún en veremos debido a dudas sobre el funcionamiento de parla (placa docentes).
+
+<br>
+
+## Estado de construcción
+
+| Placas    | Categoría       | Diseñada por | Estado de construcción          |
+| :-------- | :-------------- | :----------- | :------------------------------ |
+| 01        | Reloj           | Docentes     | Funcional                       |
+| 02        | Secuenciador 02 | Grupo 02     | Funciona, pero estamos revisando la interconexión con otras PCB mediante el uso de relés |
+| 03        | Percusión 02    | Grupo 06     | Funciona individualmente / Se deben cambiar conectores adaptados para la carcasa |
+| 04        | Oscilador 01    | Grupo 04     | Funciona individualmente / Se deben cambiar conectores adaptados para la carcasa |
+| 05        | Oscilador 02    | Grupo 04     | Funciona individualmente / Se deben cambiar conectores adaptados para la carcasa |
+| 06        | Oscilador 01    | Grupo 03     | Funciona individualmente / Se deben cambiar conectores adaptados para la carcasa |
+| 07        | Oscilador 02    | Grupo 03     | Funciona individualmente / Se deben cambiar conectores adaptados para la carcasa |
+
+<br>
+
+## Ayudas eléctricas que necesitamos domingo:
+
+- Queremos utilizar relés para conectar el secuenciador a los osciladores y percusión.
+  
+	Por lo hablado con Misaaaa y lo estudiado, entendemos que para unir los osciladores al secuenciador debemos hacerlo mediante el uso de un relé que sirva de switch para prender y apagar cada placa al momento que el secuenciador lo indique. Por lo mismo luego de varios intentos logramos hacer funcionar el sistema de encendido por relé agregando un transistor 2222A que aumenta el voltaje de salida de 4V a 9V en cada _step_
+
+Dicho todo esto, queremos saber si estas conexiones están bien realizadas y si es posible optimizar el cómo se encuentra todo conectado.
+
+<br>
+
+## Ayuda audio que necesitamos domingo:
+
+- Necesitamos ayuda con la estática que produce el parlante.
+
+- El chirihue bajo el volumen, no se está escuchando como debería.
+
+- Necesitamos conectar la salida de audio de todos los osciladores (y percusión) a un mixer, ya sea en una protoboard con un LM386 o en un fabricado comercialmente 
+
+-  Saber si Parla funciona o si debemos utilizar otro amplificador
+
+<br>
+
+## Aateriales faltantes:
+
+- Ldr, tenemos todos conectados a las placas, pero en caso de que fallen, mejor que sobre a que falte.
+
+- Es probable que necesitemos cable para conectar los LDR (Van a salir de la carcasa casi 60cm y disponemos de casi 20 de estos)
+
+<br>
+
+## Dudas Github
+
+ - No tenemos claridad como incluir este apartado (solicitud de avances por ayudas dia domingo) dentro del repo de examen. Además de saber si la estructura actual es correcta
+
+---
+
+<br>
+
 ## Actualización avances 
 ## criterios de diseño del sistema
 
