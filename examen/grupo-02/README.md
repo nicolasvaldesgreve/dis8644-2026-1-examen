@@ -4,33 +4,32 @@
 
 - Isidora Alvarez / [isidoraalvarez](https://github.com/isidoraalvarez/dis8644-2026-1)
 - Dayana Pañitrur / [dayanapanitrur](https://github.com/dayanapanitrur/dis8644-2026-1)
-- Camila Ramirez / [Estrabismx](https://github.com/Estrabismx/dis8644-2026-1)
+- Camila Ramírez / [Estrabismx](https://github.com/Estrabismx/dis8644-2026-1)
 - Angel Sabogal / [angel-udp](https://github.com/angel-udp/dis8644-2026-1)
 - Tomas Catrileo / [tomascatri](https://github.com/tomascatri/dis8644-2026-1)
 
-# Avance Sabado Sabado 04 de Julio 
+# Avance Sábado 04 de Julio 
 
 ## Placas usadas
 
-| Placas    | Categoría       | Diseñada por | Imagen                           |
-| :-------- | :---------------| :----------- | :------------------------------- |
-| 01        | Reloj           | Docentes     | ![Placas](./imagenes/pcb01.jpeg) |
-| 02        | Secuenciador 02 | Grupo 02     | ![Placas](./imagenes/pcb02.jpeg) |
-| 03        | Percusión 02    | Grupo 06     | ![Placas](./imagenes/pcb03.jpeg) |
-| 04        | Oscilador 01    | Grupo 04     | ![Placas](./imagenes/pcb04.jpeg) |
-| 05        | Oscilador 02    | Grupo 04     | ![Placas](./imagenes/pcb05.jpeg) |
-| 06        | Oscilador 01    | Grupo 03     | ![Placas](./imagenes/pcb06.jpeg) |
-| 07        | Oscilador 02    | Grupo 03     | ![Placas](./imagenes/pcb07.jpeg) |
+| Placas    | Categoría                                       | Diseñada por                                                        | Imagen                           |
+| :-------- | :---------------------------------------------- | :------------------------------------------------------------------ | :-----------------------------   |
+| 01        | **RELO** (Reloj)                                | Docentes                                                            | ![Placas](./imagenes/pcb01.jpeg) |
+| 02        | **Secuenciador binario** (Secuenciador 02)         | Grupo 02                                                            | ![Placas](./imagenes/pcb02.jpeg) |
+| 03        | **Barry Benson** (Percusión 02)                 | Grupo 06                                                            | ![Placas](./imagenes/pcb03.jpeg) |
+| 04        | **Chirigüe mecanizado** (Oscilador 01)          | Grupo 04                                                            | ![Placas](./imagenes/pcb04.jpeg) |
+| 05        | **Comunicaciones espaciales** (Oscilador 02)    | Grupo 04                                                            | ![Placas](./imagenes/pcb05.jpeg) |
+| 06        | **Comando estelar** (Oscilador 01)              | Grupo 03                                                            | ![Placas](./imagenes/pcb06.jpeg) |
+| 07        | **Resonancia** (Oscilador 02)                   | Grupo 03                                                            | ![Placas](./imagenes/pcb07.jpeg) |
 
 <br>
 
 ## Explicación de flujo de señal de audio:
 
-ordenado a grandes rasgos gesto humano a fuentes de tiempo, a secuenciador, a osciladores, a filtros, a mezcladores, a parlante
+ordenado a grandes rasgos: gesto humano a fuentes de tiempo, a secuenciador, a osciladores, a filtros, a mezcladores, a parlante.
 
-- la placa 01 corresponde al reloj y la salida envía una señal hacia la placa 02 secuenciador.
-
-- la placa 02 corresponde al secuenciador, esta tiene como entrada la señal del reloj, cuenta con 6 salidas, las cuales van a la entrada de voltaje de cada una de las 5 placas, las cuales corresponden a 4 osciladores y 1 percutor. Una de estas salidas quedará sin conectarse a nada, es decir, habrá silencio en una salida.
+- La placa 01 corresponde al reloj. Desde ella salen dos señales hacia la placa 02 secuenciador: una entrega el voltaje de alimentación y la otra envía la señal de reloj (clock), que proporciona los pulsos necesarios para el conteo binario del secuenciador. 
+- La placa 02 corresponde al secuenciador. Alimentado por el reloj, utiliza la señal de clock para realizar un conteo binario, avanzando un paso con cada pulso recibido. A partir de este conteo, sus salidas generan las señales de control que se distribuyen hacia los cuatro osciladores y la placa de percusión. Una de las salidas se deja sin conexión para incorporar un paso de silencio dentro de la secuencia.
 
 - las placas: 03, 04, 05, 06 y 07 corresponden a fuentes sonoras, reemplazamos todas las conexiones que correspondían a potenciómetros por LDR para regular de forma gestual con luz los parámetros del sonido de cada una de las placas.
 
@@ -42,122 +41,79 @@ ordenado a grandes rasgos gesto humano a fuentes de tiempo, a secuenciador, a os
 
 | Placas    | Categoría       | Diseñada por | Estado de construcción          |
 | :-------- | :-------------- | :----------- | :------------------------------ |
-| 01        | Reloj           | Docentes     | Funcional                       |
-| 02        | Secuenciador 02 | Grupo 02     | Funciona, pero estamos revisando la interconexión con otras PCB mediante el uso de relés |
-| 03        | Percusión 02    | Grupo 06     | Funciona individualmente / Se deben cambiar conectores adaptados para la carcasa |
-| 04        | Oscilador 01    | Grupo 04     | Funciona individualmente / Se deben cambiar conectores adaptados para la carcasa |
-| 05        | Oscilador 02    | Grupo 04     | Funciona individualmente / Se deben cambiar conectores adaptados para la carcasa |
-| 06        | Oscilador 01    | Grupo 03     | Funciona individualmente / Se deben cambiar conectores adaptados para la carcasa |
-| 07        | Oscilador 02    | Grupo 03     | Funciona individualmente / Se deben cambiar conectores adaptados para la carcasa |
+| 01        | **RELO** (Reloj)           | Docentes     | Funcional                       |
+| 02        | **Secuenciador binario** (Secuenciador 02) | Grupo 02     | Funciona, pero estamos revisando la interconexión con otras PCB mediante el uso de relés |
+| 03        | **Barry Benson** (Percusión 02)    | Grupo 06     | Funciona individualmente / Se deben cambiar conectores adaptados para la carcasa |
+| 04        | **Chirigüe mecanizado** (Oscilador 01)    | Grupo 04     | Funciona individualmente / Se deben cambiar conectores adaptados para la carcasa |
+| 05        | **Comunicaciones espaciales** (Oscilador 02)    | Grupo 04     | Funciona individualmente / Se deben cambiar conectores adaptados para la carcasa |
+| 06        | **Comando estelar** (Oscilador 01)    | Grupo 03     | Funciona individualmente / Se deben cambiar conectores adaptados para la carcasa |
+| 07        | **Resonancia** (Oscilador 02)    | Grupo 03     | Funciona individualmente / Se deben cambiar conectores adaptados para la carcasa |
 
 <br>
 
-## Ayudas eléctricas que necesitamos domingo:
+## Resolucion de problemas
 
-- Queremos utilizar relés para conectar el secuenciador a los osciladores y percusión.
-  
-	Por lo hablado con Misaaaa y lo estudiado, entendemos que para unir los osciladores al secuenciador debemos hacerlo mediante el uso de un relé que sirva de switch para prender y apagar cada placa al momento que el secuenciador lo indique. Por lo mismo luego de varios intentos logramos hacer funcionar el sistema de encendido por relé agregando un transistor 2222A que aumenta el voltaje de salida de 4V a 9V en cada _step_
+**Problema 1**
 
-Dicho todo esto, queremos saber si estas conexiones están bien realizadas y si es posible optimizar el cómo se encuentra todo conectado.
+Queríamos utilizar relés para conectar el secuenciador con los osciladores y la placa de percusión.
+
+Tras conversar con Misaa y revisar el funcionamiento del circuito, entendimos que la forma correcta de conectar los osciladores al secuenciador era mediante relés que actuaran como interruptores, encendiendo y apagando cada placa cuando el secuenciador lo indicara. Después de varios intentos, logramos hacer funcionar este sistema agregando un transistor **2N2222A**, que permitía aumentar el voltaje de salida de cada _step_ desde **4 V** hasta **9 V**.
+
+Posteriormente, consultamos a Aaron para verificar si las conexiones estaban correctamente realizadas y si era posible optimizar y estandarizar el montaje de los relés y transistores.
+
+**Resolución**
+
+Aaron confirmó que el circuito estaba correctamente conectado y que no presentaba problemas de funcionamiento. Sin embargo, recomendó mejorar el orden y la seguridad del montaje utilizando una PCB de prototipado, con el objetivo de organizar mejor las conexiones y reducir la cantidad de cables sueltos.
+
+Intentamos implementar esta solución, pero durante el montaje en la PCB de prototipado se produjeron falsos contactos que impedían el funcionamiento correcto del circuito. Por este motivo, decidimos volver a la configuración inicial, utilizando relés y transistores independientes, pero mejorando el aislamiento con cinta aislante y replicando esta solución en cada _step_.
+
+---
+
+**Problema 2**
+
+La placa **Chirigüe mecanizado** presentaba un volumen considerablemente menor al esperado.
+
+**Resolución**
+
+A pesar de realizar distintas pruebas e intentos de reparación, no fue posible solucionar el problema. Concluimos que se trata de una falla interna de la placa.
+
+---
+
+**Problema 3**
+
+El parlante producía una cantidad importante de estática durante su funcionamiento.
+
+**Resolución**
+
+Identificamos que el parlante estaba configurado para una entrada estéreo, mientras que nuestra salida de audio era mono. Esta incompatibilidad generaba la estática observada. Al utilizar un sistema de amplificación compatible con una señal mono, el problema quedó resuelto.
+
+---
+
+**Problema 4**
+
+Necesitábamos conectar la salida de audio de todos los osciladores y la placa de percusión a un mezclador de audio.
+
+**Resolución**
+
+Utilizamos un **mixer** facilitado por el Laboratorio de Interacciones Digitales, lo que permitió integrar correctamente todas las salidas de audio del sistema.
+
+---
+
+**Problema 5**
+
+Necesitábamos comprobar si la placa **Parla** funcionaba correctamente o si era necesario utilizar otro amplificador.
+
+**Resolución**
+
+Finalmente utilizamos un amplificador proporcionado por el Laboratorio de Interacciones Digitales, el cual cumplió correctamente la función de amplificación del sistema.
 
 <br>
-
-## Ayuda audio que necesitamos domingo:
-
-- Necesitamos ayuda con la estática que produce el parlante.
-
-- El chirihue bajo el volumen, no se está escuchando como debería.
-
-- Necesitamos conectar la salida de audio de todos los osciladores (y percusión) a un mixer, ya sea en una protoboard con un LM386 o en un fabricado comercialmente 
-
--  Saber si Parla funciona o si debemos utilizar otro amplificador
-
-<br>
-
-## Aateriales faltantes:
-
-- Ldr, tenemos todos conectados a las placas, pero en caso de que fallen, mejor que sobre a que falte.
-
-- Es probable que necesitemos cable para conectar los LDR (Van a salir de la carcasa casi 60cm y disponemos de casi 20 de estos)
-
-<br>
-
-## Dudas Github
-
- - No tenemos claridad como incluir este apartado (solicitud de avances por ayudas dia domingo) dentro del repo de examen. Además de saber si la estructura actual es correcta
 
 ---
 
 <br>
 
-# Avance Sabado Sabado 04 de Julio 
-
-
-## Placas usadas
-
-| Placas    | Categoría       | Diseñada por | Imagen                           |
-| :-------- | :---------------| :----------- | :------------------------------- |
-| 01        | Reloj           | Docentes     | ![Placas](./imagenes/pcb01.jpeg) |
-| 02        | Secuenciador 02 | Grupo 02     | ![Placas](./imagenes/pcb02.jpeg) |
-| 03        | Percusión 02    | Grupo 06     | ![Placas](./imagenes/pcb03.jpeg) |
-| 04        | Oscilador 01    | Grupo 04     | ![Placas](./imagenes/pcb04.jpeg) |
-| 05        | Oscilador 02    | Grupo 04     | ![Placas](./imagenes/pcb05.jpeg) |
-| 06        | Oscilador 01    | Grupo 03     | ![Placas](./imagenes/pcb06.jpeg) |
-| 07        | Oscilador 02    | Grupo 03     | ![Placas](./imagenes/pcb07.jpeg) |
-
-<br>
-
-## Explicación de flujo de señal de audio:
-
-ordenado a grandes rasgos gesto humano a fuentes de tiempo, a secuenciador, a osciladores, a filtros, a mezcladores, a parlante
-
-- la placa 01 corresponde al reloj y la salida envía una señal hacia la placa 02 secuenciador.
-
-- la placa 02 corresponde al secuenciador, esta tiene como entrada la señal del reloj, cuenta con 6 salidas, las cuales van a la entrada de voltaje de cada una de las 5 placas, las cuales corresponden a 4 osciladores y 1 percutor. Una de estas salidas quedará sin conectarse a nada, es decir, habrá silencio en una salida.
-
-- las placas: 03, 04, 05, 06 y 07 corresponden a fuentes sonoras, reemplazamos todas las conexiones que correspondían a potenciómetros por LDR para regular de forma gestual con luz los parámetros del sonido de cada una de las placas.
-
-- la salida tanto de los cuatro osciladores como del percutor es audio que va a la siguiente placa de amplificador o amplificador comercial, lo cuál está aún en veremos debido a dudas sobre el funcionamiento de parla (placa docentes).
-
-<br>
-
-## Estado de construcción
-
-| Placas    | Categoría       | Diseñada por | Estado de construcción          |
-| :-------- | :-------------- | :----------- | :------------------------------ |
-| 01        | Reloj           | Docentes     | Funcional                       |
-| 02        | Secuenciador 02 | Grupo 02     | Funciona, pero estamos revisando la interconexión con otras PCB mediante el uso de relés |
-| 03        | Percusión 02    | Grupo 06     | Funciona individualmente / Se deben cambiar conectores adaptados para la carcasa |
-| 04        | Oscilador 01    | Grupo 04     | Funciona individualmente / Se deben cambiar conectores adaptados para la carcasa |
-| 05        | Oscilador 02    | Grupo 04     | Funciona individualmente / Se deben cambiar conectores adaptados para la carcasa |
-| 06        | Oscilador 01    | Grupo 03     | Funciona individualmente / Se deben cambiar conectores adaptados para la carcasa |
-| 07        | Oscilador 02    | Grupo 03     | Funciona individualmente / Se deben cambiar conectores adaptados para la carcasa |
-
-<br>
-
-## Ayudas eléctricas que necesitamos domingo:
-
-- Queremos utilizar relés para conectar el secuenciador a los osciladores y percusión.
-  
-	Por lo hablado con Misaaaa y lo estudiado, entendemos que para unir los osciladores al secuenciador debemos hacerlo mediante el uso de un relé que sirva de switch para prender y apagar cada placa al momento que el secuenciador lo indique. Por lo mismo luego de varios intentos logramos hacer funcionar el sistema de encendido por relé agregando un transistor 2222A que aumenta el voltaje de salida de 4V a 9V en cada _step_
-
-Dicho todo esto, queremos saber si estas conexiones están bien realizadas y si es posible optimizar el cómo se encuentra todo conectado.
-
-<br>
-
-## Ayuda audio que necesitamos domingo:
-
-- Necesitamos ayuda con la estática que produce el parlante.
-
-- El chirihue bajo el volumen, no se está escuchando como debería.
-
-- Necesitamos conectar la salida de audio de todos los osciladores (y percusión) a un mixer, ya sea en una protoboard con un LM386 o en un fabricado comercialmente 
-
--  Saber si Parla funciona o si debemos utilizar otro amplificador
-
-<br>
-
-## Aateriales faltantes:
+## Materiales faltantes:
 
 - Ldr, tenemos todos conectados a las placas, pero en caso de que fallen, mejor que sobre a que falte.
 
@@ -165,15 +121,16 @@ Dicho todo esto, queremos saber si estas conexiones están bien realizadas y si 
 
 <br>
 
-## Dudas Github
+## Dudas GitHub
 
- - No tenemos claridad como incluir este apartado (solicitud de avances por ayudas dia domingo) dentro del repo de examen. Además de saber si la estructura actual es correcta
+ - No tenemos claridad sobre cómo incluir este apartado (solicitud de avances por ayudas dia domingo) dentro del repo de examen. Además de saber si la estructura actual es correcta
 
 ---
 
 <br>
 
 ## Actualización avances 
+
 ## criterios de diseño del sistema
 
 inspiración para construir, desde donde partieron
@@ -218,7 +175,7 @@ Percusión 02 / Grupo 06: *Barry Benson*
 |----------|:-----------:|:--------:|----------------------:|-------------:|
 | Soldadura, corrección de errores y soluciones de todas las PCB | 5 | 3 semanas | 120 hrs | 120 hrs × 5 = 600 h |
 
-## BOM (Bill of materiales)
+## BOM (Bill Of Materials)
 
 ### Reloj
 
@@ -388,6 +345,46 @@ Percusión 02 / Grupo 06: *Barry Benson*
 
 ## BOM General
 
+| Componente | Valor | Cantidad | Valor Unitario | Valor Total |
+|------------|-------|---------:|---------------:|------------:|
+| Capacitor Polarizado | 220µF | 1 | 100 | 100 |
+| Capacitor Polarizado | 100µF | 9 | 100 | 900 |
+| Capacitor Polarizado | 47µF | 1 | 100 | 100 |
+| Capacitor Polarizado | 10µF | 14 | 100 | 1400 |
+| Capacitor Polarizado | 4µF | 1 | 100 | 100 |
+| Capacitor Polarizado | 1µF | 4 | 100 | 400 |
+| Capacitor Polarizado | 0.22µF | 3 | 100 | 300 |
+| Capacitor | 1µF | 2 | 740 | 1480 |
+| Capacitor | 100nF | 10 | 100 | 1000 |
+| Capacitor | 10nF | 1 | 100 | 100 |
+| Diodo | 1N4007 | 7 | 200 | 1400 |
+| Diodo | 1N4148 | 5 | 120 | 600 |
+| LED | - | 16 | 100 | 1600 |
+| LDR | - | 15 | 990 | 14850 |
+| Resistencia | 220Ω | 10 | 100 | 1000 |
+| Resistencia | 1kΩ | 37 | 100 | 3700 |
+| Resistencia | 100kΩ | 2 | 100 | 200 |
+| Resistencia | 330kΩ | 1 | 100 | 100 |
+| Resistencia | 470kΩ | 2 | 100 | 200 |
+| Transistor | 2N2222 | 13 | 390 | 5070 |
+| Switch | SPDT | 7 | 300 | 2100 |
+| Chip | NE555 | 1 | 490 | 490 |
+| Chip | CD4017 | 1 | 890 | 890 |
+| Chip | CD40106 | 5 | 750 | 3750 |
+| Chip | CD4040 | 1 | 390 | 390 |
+| Chip | CD4046 | 2 | 700 | 1400 |
+| Chip | CD4070 | 1 | 2080 | 2080 |
+| Chip | LM324 | 1 | 590 | 590 |
+| Regulador de Voltaje | L7805 | 7 | 490 | 3430 |
+| Base DIP | 8 pines | 1 | 450 | 450 |
+| Base DIP | 14 pines | 6 | 600 | 3600 |
+| Base DIP | 16 pines | 4 | 640 | 2560 |
+| Conector | Barrel | 14 | 150 | 2100 |
+| Conector | Jack | 14 | 180 | 2520 |
+| Perno | M3 | 28 | 39,9 | 1117,2 |
+| **TOTAL GENERAL** |  |  |  | **$61.597** |
+
+
 ## carcasa
 
 decisiones materiales y formales de la carcasa
@@ -450,7 +447,7 @@ detallar operación de la partitura, como se creó, cuales fueron los referentes
 
 ## bibliografía
 
-# REFERENTES
+### REFERENTES
 
 | Referencia | Imagen |
 |------------|--------|
@@ -465,7 +462,7 @@ detallar operación de la partitura, como se creó, cuales fueron los referentes
 |  | ![](./imagenes/) |
 |  | ![](./imagenes/) |
 
-# MATERIALIDAD
+### MATERIALIDAD
 
 | Referencia | Imagen |
 |------------------------|--------|
@@ -480,7 +477,7 @@ detallar operación de la partitura, como se creó, cuales fueron los referentes
 |  | ![](./imagenes/) |
 |  | ![](./imagenes/) |
 
-# CONSTRUCTIVO
+### CONSTRUCTIVO
 
 | Referencia | Imagen |
 |------------|--------|
@@ -494,3 +491,5 @@ detallar operación de la partitura, como se creó, cuales fueron los referentes
 |  | ![](./imagenes/) |
 |  | ![](./imagenes/) |
 |  | ![](./imagenes/) |
+
+
